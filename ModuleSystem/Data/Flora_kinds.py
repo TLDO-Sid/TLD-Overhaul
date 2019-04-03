@@ -1,4 +1,4 @@
-from module_info import * #LOL
+from module_info import *
 import string
 
 dword      = 0x8000000000000000
