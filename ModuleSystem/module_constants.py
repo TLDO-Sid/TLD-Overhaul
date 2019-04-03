@@ -1077,8 +1077,8 @@ companions_end   = trp_npc17 + 1
 
 soldiers_begin = trp_farmer
 soldiers_end = trp_town_walker_1
-new_soldiers_begin = trp_dunedain_bowman
-new_soldiers_end = trp_void_overhaul
+new_soldiers_begin = trp_new_troop_overhaul_start
+new_soldiers_end = trp_new_troop_overhaul_end
 
 tavern_minstrels_begin = trp_tavern_minstrel_1
 tavern_minstrels_end   = companions_begin
@@ -1736,16 +1736,17 @@ center_list = [
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
 (p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_no_troop, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_town_50_weaponsmith, trp_town_50_horse_merchant, trp_village_1_elder, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high*2, 2, tld_siegable_normal),
 (p_town_goblin_south_outpost, [scn_goblin_south_outpost_center, -1, -1,-1,-1,scn_goblin_south_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_gundabad_m_outpost, [scn_gundabad_mirkwood_outpost, -1, -1,-1,-1,scn_gundabad_mirkwood_outpost_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
+
 (p_town_erebor, [scn_erebor_center, scn_erebor_castle, scn_rohan_prison,-1,scn_dwarf_arena,scn_erebor_siege, mesh_town_erebor],
 	[trp_barman_erebor, trp_smith_erebor, trp_merchant_erebor, trp_elder_erebor, pt_dwarf_recruits, trp_dwarf_lord, trp_dwarven_apprentice, trp_dwarven_lookout, trp_dwarven_warrior, trp_dwarven_hardened_warrior], 
 	[icon_mfc_dwarf],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_high, 1, tld_siegable_capital),

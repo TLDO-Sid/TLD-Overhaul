@@ -598,7 +598,7 @@ items =[
 ##############WEAPONS##########
 ########Uruk Weapons
 #unused ->#
-["uruk_pike_a","Uruk_Pike",[("isengard_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_two_handed|itp_wooden_parry,itc_cutting_spear,400,weight(3)|difficulty(0)|spd_rtng(81)|weapon_length(227)|swing_damage(12,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
+["uruk_pike_a","Uruk_Pike",[("isengard_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_spear|itp_two_handed|itp_wooden_parry,itc_spear_upstab,400,weight(3)|difficulty(0)|spd_rtng(81)|weapon_length(227)|swing_damage(12,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
 #<- unused#
 ["uruk_pike_b","Mordor_Pike",[("uruk_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_couchable,itc_spear_upstab,400,weight(3)|difficulty(0)|spd_rtng(81)|weapon_length(176)|swing_damage(12,blunt)|thrust_damage(29,pierce),imodbits_weapon_wood],
 ["uruk_falchion_a","Uruk_Falchion",[("uruk_falchion_a",0)],itp_type_two_handed_wpn|itp_primary|itp_penalty_with_shield|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(74)|swing_damage(26,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
@@ -616,7 +616,7 @@ items =[
 ["isengard_heavy_axe","Isengard_Heavy_Axe",[("isen_war_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry,itc_greataxe|itcf_carry_spear,300,weight(4.5)|difficulty(0)|spd_rtng(87)|weapon_length(75)|swing_damage(38,cut),imodbits_weapon_bad],
 ["isengard_heavy_sword","Isengard_Heavy_Sword",[("isen_berserk_sword",0)],itp_type_two_handed_wpn|itp_primary|itp_cant_use_on_horseback|itp_two_handed|itp_bonus_against_shield|itp_shop,itc_nodachi|itcf_carry_sword_back,500,weight(4.5)|difficulty(0)|spd_rtng(85)|weapon_length(105)|swing_damage(38,cut),imodbits_weapon_bad],
 ["isengard_spear","Isengard_Spear",[("isen_spear",0)],itp_type_polearm|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_spear_upstab,200,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(12,blunt)|thrust_damage(27,pierce),imodbits_weapon_wood],
-["isengard_pike","Isengard_Pike",[("isen_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_two_handed|itp_wooden_parry,itc_pike,500,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(210)|swing_damage(12,blunt)|thrust_damage(28,pierce),imodbits_weapon_wood],
+["isengard_pike","Isengard_Pike",[("isen_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_two_handed|itp_wooden_parry,itc_spear_upstab,500,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(210)|swing_damage(12,blunt)|thrust_damage(28,pierce),imodbits_weapon_wood],
 ########shields
 ["isen_orc_shield_a","Isen_Orc_Shield",[("isen_orc_shield",0)],itp_type_shield|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(380)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ["isen_uruk_shield_a","Uruk-hai_Shield",[("uruk_hai_shield_a",0)],itp_type_shield|itp_shop,itcf_carry_round_shield,200,weight(4)|hit_points(600)|body_armor(6)|spd_rtng(76)|weapon_length(60),imodbits_shield,],
@@ -629,7 +629,7 @@ items =[
 ["orc_club_a","Orc_Club",[("orc_club_a",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_cleaver|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(62)|swing_damage(15,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_club_b","Warg_Rider_Club",[("orc_club_b",0)],itp_type_two_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack|itp_penalty_with_shield,itc_bastardfalchion|itcf_carry_mace_left_hip,5,weight(3)|difficulty(0)|spd_rtng(75)|weapon_length(77)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_club_c","Spiky_Orc_Club",[("orc_club_c",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_dagger|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(85)|weapon_length(70)|swing_damage(20,pierce)|thrust_damage(25,pierce),imodbits_weapon_wood],
-["orc_club_d","Evil_Mace",[("evil_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_cleaver|itcf_carry_mace_left_hip,5,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(59)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
+["orc_club_d","Evil_Mace",[("orc_club_d",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_no_parry|itp_wooden_attack,itc_cleaver|itcf_carry_mace_left_hip,5,weight(3.5)|difficulty(0)|spd_rtng(90)|weapon_length(59)|swing_damage(27,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_sledgehammer","Orc_Sledgehammer",[("orc_sledgehammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_no_parry|itp_wooden_attack|itp_cant_use_on_horseback,itc_cut_two_handed|itcf_carry_spear,100,weight(7)|difficulty(0)|spd_rtng(80)|weapon_length(75)|swing_damage(30,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["orc_simple_spear","Orc_Spear",[("orc_simple_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_spear_upstab,100,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(152)|thrust_damage(22,pierce),imodbits_weapon_wood],
 ["orc_skull_spear","Orc_Skull_Spear",[("orc_skull_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_no_parry|itp_covers_head,itc_spear_upstab,200,weight(3)|difficulty(0)|spd_rtng(92)|weapon_length(162)|thrust_damage(25,pierce),imodbits_weapon_wood],
@@ -805,7 +805,7 @@ items =[
 ["rohan_shield_c","Rohan_Shield",[("roh_shield3",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(380)|body_armor(6)|spd_rtng(105)|weapon_length(50),imodbits_shield,],
 ["rohan_shield_d","Rohan_Shield",[("roh_shield4",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(380)|body_armor(6)|spd_rtng(105)|weapon_length(50),imodbits_shield,],
 ["rohan_shield_e","Rohan_Heavy_Shield",[("roh_guard_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,600,weight(3)|hit_points(450)|body_armor(8)|spd_rtng(95)|weapon_length(60),imodbits_shield,],
-["rohan_shield_f","Rohan_Shield",[("roh_guard_shield",0)],itp_type_shield|itp_wooden_parry,itcf_carry_round_shield,400,weight(2.5)|hit_points(400)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(store_random_in_range,":p",4,7), (val_add,":p","mesh_rohan_paint_1"),(cur_item_set_tableau_material, "tableau_rohan_boss_shield" ,":p")])]],
+["rohan_shield_f","Rohan_Shield",[("roh_guard_shield",0)],itp_type_shield|itp_wooden_parry,itcf_carry_round_shield,400,weight(2.5)|hit_points(400)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ["rohan_shield_g","Rohan_Royal_Shield",[("roh_king_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,1000,weight(3)|hit_points(500)|body_armor(10)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
 ##FOOTGEAR##########
 ["rohan_light_greaves","Rohan_Light_Greaves",[("rohan_greaves",0)],itp_type_foot_armor|itp_attach_armature,0,700,weight(3)|leg_armor(33)|difficulty(0),imodbits_elf_armor],
@@ -1132,17 +1132,17 @@ items =[
 ["dwarf_great_mattock","Dwarf_War_Axe",[("ironhills_axe_2h",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(91)|swing_damage(42,pierce)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["dwarf_great_axe","Dwarf_Great_Axe",[("erebor_great_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,1300,weight(4)|difficulty(0)|spd_rtng(87)|weapon_length(96)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["ironhills_great_axe","Dwarf_Great_Axe",[("ironhills_great_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,1300,weight(4)|difficulty(0)|spd_rtng(87)|weapon_length(95)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good], # NEW
-["dwarf_warhammer","Dwarf_War_Hammer",[("dwarf_war_hammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,1100,weight(4)|difficulty(0)|spd_rtng(88)|weapon_length(93)|swing_damage(43,pierce)|thrust_damage(0,pierce),imodbits_weapon_good], # NEW
+["dwarf_warhammer","Dwarf_War_Hammer",[("dwarf_war_hammer",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,1100,weight(4)|difficulty(0)|spd_rtng(88)|weapon_length(93)|swing_damage(43,blunt)|thrust_damage(0,pierce),imodbits_weapon_good], # NEW
 
 ["dwarf_throwing_axe","Dwarf_Throwing_Axes",[("dwarf_throwing_axe",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_axe,700,weight(5)|difficulty(0)|shoot_speed(20)|spd_rtng(99)|weapon_length(53)|thrust_damage(62,cut)|accuracy(99)|max_ammo(4),imodbits_thrown,[]],
 
-["dwarf_short_bow","Dwarf_Crossbow",[("dwarf_crossbow",0),("carry_dwarf_crossbow",ixmesh_carry)],itp_type_crossbow|itp_primary|itp_two_handed|itp_cant_reload_on_horseback|itp_shop,itcf_shoot_crossbow|itcf_carry_crossbow_back,900,weight(3.5)|difficulty(15)|shoot_speed(69)|spd_rtng(37)|thrust_damage(58,pierce)|accuracy(99)|max_ammo(1),imodbits_good_bow,[] ],
-["dwarf_horn_bow","Dwarf_Heavy_Crossbow",[("dwarf_crossbow",0)],itp_type_crossbow|itp_primary|itp_two_handed|itp_cant_reload_on_horseback,itcf_shoot_crossbow|itcf_carry_crossbow_back,1300,weight(3.75)|difficulty(15)|shoot_speed(70)|spd_rtng(37)|thrust_damage(63,pierce)|accuracy(99)|max_ammo(1),imodbits_good_bow,[] ],
+["dwarf_short_bow","Dwarf_Crossbow",[("dwarf_crossbow",0),("carry_dwarf_crossbow",ixmesh_carry)],itp_type_crossbow|itp_primary|itp_two_handed|itp_cant_reload_on_horseback|itp_shop,itcf_shoot_crossbow|itcf_carry_crossbow_back,900,weight(3.5)|difficulty(16)|shoot_speed(69)|spd_rtng(37)|thrust_damage(58,pierce)|accuracy(99)|max_ammo(1),imodbits_good_bow,[] ],
+["dwarf_horn_bow","Dwarf_Heavy_Crossbow",[("dwarf_crossbow",0)],itp_type_crossbow|itp_primary|itp_two_handed|itp_cant_reload_on_horseback,itcf_shoot_crossbow|itcf_carry_crossbow_back,1300,weight(3.75)|difficulty(16)|shoot_speed(70)|spd_rtng(37)|thrust_damage(63,pierce)|accuracy(99)|max_ammo(1),imodbits_good_bow,[] ],
 ["dwarf_bolts","Dwarf_Bolts",[("dwarf_bolt",0),("dwarf_bolt_fly",ixmesh_flying_ammo),("dwarf_bolt_bag",ixmesh_carry)],itp_type_bolts|itp_shop|itp_default_ammo|itp_can_penetrate_shield,itcf_carry_quiver_right_vertical,500,weight(2.25)|abundance(90)|thrust_damage(1,pierce)|max_ammo(29)|weapon_length(63),imodbits_good_missile,[]], # NEW
 ["dwarf_heavy_bolts","Dwarf_Heavy_Bolts",[("dwarf_heavy_bolt",0),("dwarf_heavy_bolt_fly",ixmesh_flying_ammo),("dwarf_heavy_bolt_bag",ixmesh_carry)],itp_type_bolts|itp_shop|itp_default_ammo|itp_can_penetrate_shield,itcf_carry_quiver_right_vertical,700,weight(3)|abundance(90)|thrust_damage(2,pierce)|max_ammo(29)|weapon_length(63),imodbits_good_missile,[]], # NEW
 
 ["dwarf_greatsword","Stonehelm_Sword",[("dwarven_great_sword",0)],itp_type_two_handed_wpn|itp_primary,itc_bastardsword|itcf_carry_sword_back,2200,weight(2)|difficulty(0)|spd_rtng(95)|weapon_length(90)|swing_damage(38,cut)|thrust_damage(26,pierce),imodbits_weapon], # NEW
-["obsidian_warhammer","Obsidian_War_Hammer",[("obsidian_hammer",0)],itp_type_polearm|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,3700,weight(4)|difficulty(0)|spd_rtng(96)|weapon_length(88)|swing_damage(46,cut)|thrust_damage(0,pierce),imodbits_weapon_good], # NEW
+["obsidian_warhammer","Obsidian_War_Hammer",[("obsidian_hammer",0)],itp_type_polearm|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_cant_use_on_horseback,itc_greataxe|itcf_carry_spear,3700,weight(4)|difficulty(0)|spd_rtng(96)|weapon_length(88)|swing_damage(46,blunt)|thrust_damage(0,pierce),imodbits_weapon_good], # NEW
 ["dain_hammer","Dain_Battle_Hammer",[("Dain_warhammer",0)],itp_type_one_handed_wpn|itp_primary|itp_secondary|itp_bonus_against_shield,itc_scimitar|itcf_carry_mace_left_hip,700,weight(2)|difficulty(0)|spd_rtng(97)|weapon_length(56)|swing_damage(40,blunt)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 ########SHIELDS##########
@@ -1150,7 +1150,7 @@ items =[
 ["dwarf_shield_b","Dwarven_Shield",[("dwarf_light_shield_2",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,600,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(95)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_c","Erebor_Heavy_Shield",[("erebor_shield",0)],itp_type_shield|itp_shop,itcf_carry_round_shield,1000,weight(3)|hit_points(1000)|body_armor(20)|spd_rtng(90)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_d","Iron_Hills_Heavy_Shield",[("ironhills_shield",0)],itp_type_shield|itp_shop,itcf_carry_kite_shield,1000,weight(3)|hit_points(1000)|body_armor(20)|spd_rtng(90)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_f","Erebor_Guard_Shield",[("erebor_guard_shield",0)],itp_type_shield|itp_shop,itcf_carry_round_shield,1500,weight(3)|hit_points(700)|body_armor(25)|spd_rtng(90)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_f","Erebor_Guard_Shield",[("erebor_guard_shield",0)],itp_type_shield|itp_shop,itcf_carry_round_shield,1500,weight(3)|hit_points(1200)|body_armor(25)|spd_rtng(90)|weapon_length(60),imodbits_shield_good,],
 
 ["dwarf_shield_g","Dwarven_Shield",[("dwarf_light_shield_1",0)],itp_type_shield,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_i","Dwarven_Shield",[("dwarf_light_shield_2",0)],itp_type_shield,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
@@ -1223,13 +1223,13 @@ items =[
 ["dain_greaves","Erebor_King_Greaves",[("king_dain_greaves",0)],itp_type_foot_armor|itp_attach_armature,0,2300,weight(3)|leg_armor(45)|difficulty(0),imodbits_elf_armor],
 
 ["dwarf_helm_p","Erebor_Hero_Helmet",[("erebor_helmet_reward",0)],itp_type_head_armor|0,0,3000,weight(3)|head_armor(48)|difficulty(0),imodbits_elf_armor],
-["dwarf_armor_reward","Erebor_Hero_Armor",[("erebor_armor_reward",0)],itp_type_body_armor|itp_covers_legs,0,5500,weight(32)|head_armor(38)|body_armor(48)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["dwarf_armor_reward","Erebor_Hero_Armor",[("erebor_armor_reward",0)],itp_type_body_armor|itp_covers_legs,0,5500,weight(32)|head_armor(0)|body_armor(48)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["dwarf_greaves_reward","Erebor_Hero_Greaves",[("erebor_greaves_reward",0)],itp_type_foot_armor|itp_attach_armature,0,2300,weight(3)|leg_armor(43)|difficulty(0),imodbits_elf_armor],
 
 #
 #N/A
-["wood_club","Wooden_Club",[("orc_club_a",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(62)|swing_damage(15,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
-["twohand_wood_club","Large_Wooden_Club",[("orc_club_d",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_wooden_attack|itp_shop,itc_nodachi|itcf_carry_spear,10,weight(3.5)|difficulty(0)|spd_rtng(85)|weapon_length(75)|swing_damage(20,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
+["wood_club","Wooden_Club",[("wood_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,5,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(62)|swing_damage(15,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
+["twohand_wood_club","Large_Wooden_Club",[("twohand_wood_club",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_wooden_attack|itp_shop,itc_nodachi|itcf_carry_spear,10,weight(3.5)|difficulty(0)|spd_rtng(85)|weapon_length(75)|swing_damage(20,blunt)|thrust_damage(0,blunt),imodbits_weapon_wood],
 
 
 ## Shield Bear Club Imod Hack Start

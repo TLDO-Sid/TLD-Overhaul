@@ -115,10 +115,10 @@ game_menus = [
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
 	 ("spacer"    ,[],"_"  ,[]),
 	 ("go_bback"  ,[],"Go Back",[(change_screen_quit              ),]), 
-	]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
-	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]),  #
-	 ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]),  #
-	] for ct in range(cheat_switch)])+[	 #
+	# ]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
+	#  ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]),  #
+	#  ("quick2"    ,[(eq, cheat_switch, 1),],"[dev: quick start Mordor]",[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),(jump_to_menu,"mnu_start_phase_2" ),]),  #
+	# ] for ct in range(cheat_switch)])+[	 #
 	]
  ),
 #This needs to be the second window!!!
@@ -185,23 +185,23 @@ game_menus = [
 	  ]) + [
 
 	  ("spacer",[],"_",[]),
-	]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
-      ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"), #
-	    ],"CHEAT: become a {s21}",[ #
-		(troop_get_upgrade_troop,":t","$player_current_troop_type",0), #
-	    (call_script,"script_start_as_one",":t"), #
-		(jump_to_menu,"mnu_start_phase_2" ), #
-	  ]), #
-      ("cheat01",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",1),(gt,":t",0),(str_store_troop_name,s21,":t"), #
-	    ],"CHEAT: become a  {s21}",[ #
-		(troop_get_upgrade_troop,":t","$player_current_troop_type",1), #
-	    (call_script,"script_start_as_one",":t"), #
-		(jump_to_menu,"mnu_start_phase_2" ), #
-	  ]), #
-      ("cheat03",[(eq, cheat_switch, 1),(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party", #
-	  [(party_add_members, "p_main_party", "$player_current_troop_type", 10),	   #
-	  ]), #
-	] for ct in range(cheat_switch)])+[	 # 
+	# ]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
+ #      ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"), #
+	#     ],"CHEAT: become a {s21}",[ #
+	# 	(troop_get_upgrade_troop,":t","$player_current_troop_type",0), #
+	#     (call_script,"script_start_as_one",":t"), #
+	# 	(jump_to_menu,"mnu_start_phase_2" ), #
+	#   ]), #
+ #      ("cheat01",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",1),(gt,":t",0),(str_store_troop_name,s21,":t"), #
+	#     ],"CHEAT: become a  {s21}",[ #
+	# 	(troop_get_upgrade_troop,":t","$player_current_troop_type",1), #
+	#     (call_script,"script_start_as_one",":t"), #
+	# 	(jump_to_menu,"mnu_start_phase_2" ), #
+	#   ]), #
+ #      ("cheat03",[(eq, cheat_switch, 1),(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party", #
+	#   [(party_add_members, "p_main_party", "$player_current_troop_type", 10),	   #
+	#   ]), #
+	# ] for ct in range(cheat_switch)])+[	 # 
     ]
  ),
 
@@ -251,22 +251,22 @@ game_menus = [
 	# ("custom_battle_choose" ,[],"____________Build your own battle____________.", #
 	# 	[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]), #
 
-	]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
-	("custom_battle_scenario_11",[],"Test Battles (Tune Balancing!)", #
-		[(jump_to_menu, "mnu_quick_battle_general_test"),]), #
-	("custom_battle_scenario_10",[],"Scenery test battle", #
-		[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]), #
-	("troll_battle_scenario",[],"Test Troll Battles", #
-		[(jump_to_menu, "mnu_quick_battle_troll"),]), #
-	("warg_battle_scenario",[],"Test Warg Battles", #
-		[(jump_to_menu, "mnu_quick_battle_wargs"),]), #
-	("choose_scene"             ,[],"** Scene Chooser **", #
-		[                                         (jump_to_menu, "mnu_choose_scenes_0"),]), #
-	] for ct in range(cheat_switch)])+[ #
-    ("build_your_own_scene"     ,[],"** Build your own scene for TLD **", #
-		[                                         (jump_to_menu, "mnu_build_your_scene"),]), #
-	("dressing_room" ,[(eq, cheat_switch, 1)],"Dressing Room", #
-		[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]), #
+	# ]+concatenate_scripts([[ # COMMENT THIS BEFORE RELEASE!!! (Sid)
+	# ("custom_battle_scenario_11",[],"Test Battles (Tune Balancing!)", #
+	# 	[(jump_to_menu, "mnu_quick_battle_general_test"),]), #
+	# ("custom_battle_scenario_10",[],"Scenery test battle", #
+	# 	[(assign, "$g_custom_battle_scenario", 9),(jump_to_menu, "mnu_custom_battle_2"),]), #
+	# ("troll_battle_scenario",[],"Test Troll Battles", #
+	# 	[(jump_to_menu, "mnu_quick_battle_troll"),]), #
+	# ("warg_battle_scenario",[],"Test Warg Battles", #
+	# 	[(jump_to_menu, "mnu_quick_battle_wargs"),]), #
+	# ("choose_scene"             ,[],"** Scene Chooser **", #
+	# 	[                                         (jump_to_menu, "mnu_choose_scenes_0"),]), #
+	# ] for ct in range(cheat_switch)])+[ #
+ #    ("build_your_own_scene"     ,[],"** Build your own scene for TLD **", #
+	# 	[                                         (jump_to_menu, "mnu_build_your_scene"),]), #
+	# ("dressing_room" ,[(eq, cheat_switch, 1)],"Dressing Room", #
+	# 	[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]), #
 
 	]+concatenate_scripts([[
 	("custom_battle_scenario_12",[],"Choose factions for battle",
@@ -1195,7 +1195,7 @@ game_menus = [
 ( "start_eye",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the Lidless Eye^Choose your Race", "none",[],[
  ("start_or"  ,[],"an ORC, serving the Lidless Eye"       ,[(jump_to_menu,"mnu_start_eye_orc"),]),
- ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
  ("start_em"  ,[],"a MAN, subjugated by Sauron"           ,[(jump_to_menu,"mnu_start_eye_man"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
@@ -1203,7 +1203,7 @@ game_menus = [
 ( "start_hand",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the White Hand^Choose your Race", "none",[],[
  ("start_whor",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
- ("start_isur",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_isur",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
  ("start_duma",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
@@ -1228,8 +1228,8 @@ game_menus = [
  ),
 ( "start_good_dwarf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_elf")],[
-  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
-  ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+  ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
   ("spacer" , [],"_",[]),  
   ("go_back", [],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
@@ -1257,16 +1257,16 @@ game_menus = [
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
- ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye")]),    ]
  ),
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
- ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),       (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
- ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_goblin_gundabad"),      (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),       (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+ ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_goblin_gundabad"),      (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
  ("spacer" ,[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_hand")]),    ]
  ),
@@ -1288,11 +1288,11 @@ game_menus = [
 ( "choose_gender",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Your gender?", "none",[],
  [("start_male"  ,[],"Male"   ,[#(assign,"$character_gender",tf_male  ),
-    (jump_to_menu,"mnu_start_as_one"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+    (jump_to_menu,"mnu_choose_skill"),]), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
   ("start_female",[],"Female" ,[
     (troop_set_type,"trp_player",tf_female), # override race for females elves and mans
     #(assign,"$character_gender",tf_female), no need
-    (jump_to_menu,"mnu_start_as_one"), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
+    (jump_to_menu,"mnu_choose_skill"), # INSERT (jump_to_menu,"mnu_choose_skill") BEFORE RELEASE AND (jump_to_menu,"mnu_start_as_one") AFTER!!! (Sid)
   ]),
   ("spacer",[],"_",[]),
 
@@ -1778,7 +1778,6 @@ game_menus = [
 
     #Kham - Removed Compile Dependence for Cheat Menu
 
- 	("spacer_dev_menu"    ,[],"_"  ,[]),
  	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu")]),  # COMMENT THIS BEFORE EACH RELEASE!!! (Sid)
     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
@@ -10782,7 +10781,7 @@ game_menus = [
     (set_background_mesh, "mesh_draw_bear"),
   (else_try),
     (eq,":ambush_troop", "trp_wolf"),
-    (set_background_mesh, "mesh_draw_wolf"), #swy-- we don't have an illustration for wolves yet!
+    (set_background_mesh, "mesh_draw_wolf"),
   (try_end),
   
 	(str_store_string, s3, "@You cover up your tracks and move onward."), 
@@ -10796,7 +10795,7 @@ game_menus = [
 			(troop_add_item, "trp_player",reg5),
 		(try_end),
 		(change_screen_map)]),
-	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+#	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]), # COMMENT THIS!!! (Sid)
 ]),
 
 ("animal_ambush_fail", 0, "The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.", "none", 
@@ -10830,7 +10829,7 @@ game_menus = [
 ],
 [
 	("continue",[],"Continue...",[(change_screen_map)]),
-	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]),
+#	("repeat",[(eq, cheat_switch, 1)],"DEBUG: Repeat...",[(jump_to_menu, "mnu_animal_ambush"),]), # COMMENT THIS!!! (Sid)
 ]),
 
 ("build_your_scene",0,
